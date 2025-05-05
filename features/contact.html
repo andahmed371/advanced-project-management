@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Ashraf | Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="light">
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Full-width Navbar -->
+    <header class="navbar-container">
+      <nav class="navbar">
+        <div class="logo">AA<span>.</span></div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+
+        <button class="dark-toggle">🌙</button>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>I'm <span id="typewriter"></span></h1>
+        <p>
+          A passionate full-stack web developer crafting modern digital
+          experiences.
+        </p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-text">
+          <p>
+            Hello! I'm John Doe, a dedicated software engineer and designer
+            based in Toronto. With over 5 years of experience, I've worked on
+            diverse projects ranging from enterprise-level applications to
+            creative websites and interactive dashboards.
+          </p>
+          <p>
+            My passion lies in building scalable, user-friendly, and visually
+            appealing web solutions using the latest technologies like React,
+            Node.js, Express, MongoDB, and more. I thrive in collaborative
+            environments and am always eager to learn and grow as a developer.
+          </p>
+          <p>Let’s build something amazing together!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 / SCSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>Vue</li>
+              <li>Next.js</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Others</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Webpack</li>
+              <li>Docker</li>
+              <li>Figma</li>
+              <li>REST APIs</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="progress-container">
+          <h3>Proficiency</h3>
+          <div class="progress-box">
+            <label>HTML</label>
+            <div class="progress-bar" data-percent="95%">
+              <span class="percent">95%</span>
+            </div>
+          </div>
+          <div class="progress-box">
+            <label>CSS</label>
+            <div class="progress-bar" data-percent="90%">
+              <span class="percent">90%</span>
+            </div>
+          </div>
+          <div class="progress-box">
+            <label>JavaScript</label>
+            <div class="progress-bar" data-percent="85%">
+              <span class="percent">85%</span>
+            </div>
+          </div>
+          <div class="progress-box">
+            <label>React</label>
+            <div class="progress-bar" data-percent="80%">
+              <span class="percent">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card" onclick="openModal('modal1')">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Portfolio Website</h3>
+                <p>My personal website built from scratch.</p>
+              </div>
+              <div class="card-back">
+                <p>Technologies: HTML, CSS, JS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('modal2')">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Task Manager App</h3>
+                <p>Simple task manager with local storage support.</p>
+              </div>
+              <div class="card-back">
+                <p>Technologies: JavaScript, LocalStorage</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('modal3')">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Weather Dashboard</h3>
+                <p>Live weather updates with location detection.</p>
+              </div>
+              <div class="card-back">
+                <p>Technologies: JavaScript, OpenWeather API</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea
+            rows="5"
+            id="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <div id="formMessage" class="form-message"></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Portfolio Website</h2>
+        <p>
+          This project showcases my work and experience. Built with vanilla
+          HTML, CSS, and JavaScript for maximum performance and control.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Task Manager App</h2>
+        <p>
+          A simple but powerful app to manage your daily tasks efficiently using
+          browser localStorage.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modal3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Weather Dashboard</h2>
+        <p>
+          Real-time weather dashboard that fetches data from the OpenWeatherMap
+          API and displays it beautifully.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Ahmed Ashraf. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
